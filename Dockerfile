@@ -55,4 +55,4 @@ RUN git clone https://github.com/greenbone/gsa; \
 EXPOSE 443
 
 ##CMD [ "/bin/bash" ]
-CMD [ "gsad" ]
+CMD [ "/usr/local/sbin/gsad" ]
