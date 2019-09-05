@@ -52,6 +52,7 @@ RUN git clone https://github.com/greenbone/gsa; \
     cd build; \
     cmake .. ; \ 
     make install;
+RUN export LD_LIBRARY_PATH=/usr/local/lib
 EXPOSE 443
 
 ##CMD [ "/bin/bash" ]
