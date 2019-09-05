@@ -55,4 +55,5 @@ RUN git clone https://github.com/greenbone/gsa; \
 EXPOSE 443
 
 ##CMD [ "/bin/bash" ]
-CMD [ "/usr/local/sbin/gsad" ]
+##CMD [ "/usr/local/sbin/gsad" ]
+CMD ["/usr/local/sbin/gsad --listen=0.0.0.0 --port=443 --foreground --verbose"]
